@@ -127,6 +127,7 @@ int deletar()
  		printf("\t1-Registrar alunos\n");
  		printf("\t2-Consultar cadastros\n");
  		printf("\t3-Deletar cadastros\n\n");
+ 		printf("\t4- Sair do sistema\n");
  		printf("Opção:");
  		
 		scanf("%d",&opcao); // armazenando a escolha do usuário 
@@ -146,8 +147,13 @@ int deletar()
 		 	case 3 :
 		 		consultar();
 		 		break;
-
-			 default :
+		 		
+		 	case 4 :
+			 printf("Obrigado por utilizar o sistema\n");
+			 return 0;
+			 break;
+			 	
+			default :
 		 		printf("Essa opção não está disponivel!\n");
 		 		system("pause");
 		 		break;
